@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lakhanya Consulting Registration</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      margin: 0;
+      background-color: #b2f0b2; /* Light green background */
+      color: green; /* All text in Green */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+    .form-container {
+      background-color: #1b1b1b;
+      width: 100%;
+      max-width: 400px;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+      margin-bottom: 20px;
+    }
+    .form-container h1 {
+      color: green; /* Green color for the header */
+      text-align: center;
+      font-size: 24px;
+    }
+    .form-container h3 {
+      color: green; /* Green color for the subheader */
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 16px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-size: 14px;
+      color: green; /* Green color for the labels */
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 10px;
+      background-color: #333;
+      color: white;
+    }
+    input[type="submit"] {
+      background-color: green;
+      font-weight: bold;
+      margin-top: 25px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    input[type="submit"]:hover {
+      background-color: yellow;
+      color: black;
+    }
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: green; /* Green color for footer */
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>Lakhanya Consulting</h1>
+    <h3>Client Personal Details</h3>
+
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="id_number">ID Number:</label>
+      <input type="text" id="id_number" name="id_number" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="service">Interested Service:</label>
+      <select id="service" name="service" required>
+        <option value="">-- Select a Service --</option>
+        <option value="bee">BEE Certificate</option>
+        <option value="company_registration">Company Registration</option>
+        <option value="tax_clearance">Tax Clearance</option>
+        <option value="email_hosting">Email Hosting</option>
+        <option value="website">Website Development</option>
+        <option value="logo_design">Logo Design</option>
+        <option value="company_reinstate">Company Reinstatement</option>
+        <option value="company_service_reinstate">Company Service Company Re-instate</option>
+      </select>
+
+      <label for="message">Additional Notes:</label>
+      <textarea id="message" name="message" rows="3"></textarea>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+
+  <div class="footer">
+    <p>&copy; Lakhanya Group 2025</p>
+  </div>
+
+</body>
+</html>
